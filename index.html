@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Connect Health — Portal de Sistemas</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="logo_ConnectHealth_light.png" />
+
+  <!-- Google Fonts: Inter / Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    
+    <!-- Header with Logo -->
+    <header class="header">
+      <img src="logo_ConnectHealth_light.png" alt="Connect Health Logo" class="logo-img" />
+      <h1 class="portal-title">Sistemas & Ferramentas Internas</h1>
+      <p class="portal-subtitle">Selecione o sistema que deseja acessar:</p>
+    </header>
+
+    <!-- Links Grid -->
+    <main class="grid-container">
+      
+      <!-- Card 1: Simulador de Preço -->
+      <div class="system-card">
+        <div class="card-top">
+          <div class="icon-box icon-cyan">
+            <i data-lucide="calculator"></i>
+          </div>
+          <span class="badge badge-online">
+            <span class="dot dot-online"></span> Ativo
+          </span>
+        </div>
+        
+        <div class="card-info">
+          <h2>Simulador de Preço</h2>
+          <p>Tabelas de valores, comparativos e simulação de planos.</p>
+        </div>
+
+        <a href="https://simulador-ashen-two.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-cyan">
+          <span>Acessar Simulador</span>
+          <i data-lucide="arrow-up-right"></i>
+        </a>
+      </div>
+
+      <!-- Card 2: Gerador de Proposta -->
+      <div class="system-card">
+        <div class="card-top">
+          <div class="icon-box icon-emerald">
+            <i data-lucide="file-text"></i>
+          </div>
+          <span class="badge badge-online">
+            <span class="dot dot-online"></span> Ativo
+          </span>
+        </div>
+
+        <div class="card-info">
+          <h2>Gerador de Proposta</h2>
+          <p>Emissão e personalização de propostas comerciais.</p>
+        </div>
+
+        <a href="https://geradorconnect.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-emerald">
+          <span>Acessar Gerador</span>
+          <i data-lucide="arrow-up-right"></i>
+        </a>
+      </div>
+
+      <!-- Card 3: ERP Connect -->
+      <div class="system-card card-inactive">
+        <div class="card-top">
+          <div class="icon-box icon-amber">
+            <i data-lucide="database"></i>
+          </div>
+          <span class="badge badge-warning">
+            <span class="dot dot-warning"></span> Em Breve
+          </span>
+        </div>
+
+        <div class="card-info">
+          <h2>ERP Connect</h2>
+          <p>Sistema de gestão, financeiro e controle operacional.</p>
+        </div>
+
+        <a href="https://erp-connect-psi.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-amber">
+          <span>Acessar ERP (Prévia)</span>
+          <i data-lucide="external-link"></i>
+        </a>
+      </div>
+
+    </main>
+
+    <!-- Simple Footer -->
+    <footer class="footer">
+      <p>Connect Health &bull; Uso Interno</p>
+    </footer>
+
+  </div>
+
+  <script>
+    // Initialize icons
+    if (window.lucide) {
+      lucide.createIcons();
+    }
+  </script>
+</body>
+</html>
